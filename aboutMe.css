@@ -86,7 +86,7 @@ body{
 #wide p{
 	padding: 20px;
 	font-size: larger;
-	color: #037492;
+	color: #02364c;
 }
 
 /* -------------- RIGHT -------------- */
@@ -100,12 +100,15 @@ body{
 #narrow h1,#narrow h2,#narrow h4{
 	padding: 5px;
 	margin: 0;
-	color: #037492;
+	color: #02364c;
 }
 #narrow h3{
 	margin: 0;
 	padding: 15px 5px 5px 5px;
-	color: #e2cf11;
+	color: #02364c;
+	text-decoration: underline;
+	-webkit-text-decoration-color: #e2cf11;  
+	text-decoration-color:#e2cf11 ;
 }
 #narrow h5,#narrow h6,#narrow li{
 	padding-left: 5px;
@@ -125,7 +128,7 @@ body{
 	justify-content: space-around;
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
-	padding: 55px 50px;
+	padding: 40px;
 }
 
 /* -------------- LEFT -------------- */
@@ -138,15 +141,22 @@ body{
 }
 .footer-links{
 	color:  #037492;
-	margin: 20px 0 12px;
+	margin: 20px 0 20px;
 	padding: 0;
 }
 .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
+  	font-weight:400;
+	text-decoration: underline;
+	-webkit-text-decoration-color: #e2cf11;  
+	text-decoration-color:#e2cf11 ;
 	color:  inherit;
+}
+.footer-links a:hover{
+	color: rgba(3,116,146,.5);
+	-webkit-text-decoration-color: rgba(226,207,17,.5);  
+	text-decoration-color:rgba(226,207,17,.5) ;
 }
 .footer-links a:before {
 	content: "|";
@@ -161,10 +171,30 @@ body{
 	content: none;
   }
 .footer-company-name{
-	color:  #222;
+	color:  #02364c;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
+}
+.footer-icons{
+	/* margin-top: 25px; */
+}
+
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #037492;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 10px;
 }
 
 /* -------------- CENTER -------------- */
@@ -196,7 +226,7 @@ body{
 
 #center p{
 	display: inline-block;
-	color: #037492;
+	color: #02364c;
   font-weight:400;
 	vertical-align: middle;
 	margin:0;
@@ -210,7 +240,7 @@ body{
 }
 
 #center p a{
-	color:  #e2cf11;
+	color: #02364c;
 	text-decoration: none;
 }
 
@@ -225,40 +255,10 @@ body{
 
 }
 .footer-company-about{
-	line-height: 20px;
-	color:  #037492;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-company-about span{
-	display: block;
-	color:  #e2cf11;
+	color:  #02364c;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
-}
-
-.footer-icons{
-	margin-top: 25px;
-}
-
-.footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #037492;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 800px) {
