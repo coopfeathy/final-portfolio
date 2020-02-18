@@ -250,13 +250,54 @@ body{
 	width: 20%;
 
 }
-.footer-company-about{
+.tic-about{
 	color:  #02364c;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
+.play-area {
+	display: grid;
+	width: 120px;
+	height: 120px;
+	grid-template-columns: auto auto auto;
+}
 
+.block {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	border: 1px solid #02364c;
+	color: #02364c;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+.win {
+	background: #e2cf11;
+}
+#block_0, #block_1, #block_2 {
+	border-top: none;
+}
+#block_0, #block_3, #block_6 {
+	border-left: none;
+}
+#block_6, #block_7, #block_8 {
+	border-bottom: none;
+}
+#block_2, #block_5, #block_8 {
+	border-right: none;
+}
+.reset{
+	color: #02364c;
+	background-color: #d4e1e9;
+	border-color: #02364c;
+}
+.reset:focus{
+	outline: none;
+}
 @media only screen and (max-width: 800px) {
 	#footer { 
 	  flex-direction: column;
