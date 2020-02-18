@@ -69,11 +69,13 @@ body{
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
 	display: flex;
+	align-items: flex-start;
 	flex-direction: column;
 }
 #picDiv{
 	display: flex;
 	width: 100%;
+	
 }
 .clear{
 	clear: both;
