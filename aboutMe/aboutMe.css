@@ -40,7 +40,7 @@ body{
 	border-bottom: 4px solid #e2cf11;
 	color: #037492;
 	text-decoration: none;
-	font-size: x-large;
+	font-size: 25px;
 }
 .link:hover{
 	color: rgba(3,116,146,.5);
