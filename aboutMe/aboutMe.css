@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 body{
 	background-color: #e9dcc9;
 	margin: 20px;
-    font-weight: 200;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+	font-family: 'Open Sans';
 }
 
 /* --------------------- HEADER --------------------- */
@@ -226,7 +228,7 @@ body{
 }
 #center p span{
 	display:block;
-	font-weight: normal;
+	font-weight: normal; 
 	font-size:14px;
 	line-height:2;
 }

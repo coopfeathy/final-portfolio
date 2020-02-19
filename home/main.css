@@ -1,8 +1,11 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 body{
 	background-color: #e9dcc9;
 	height: 100vh;
-	font-weight: 200;
+	font-weight: 300;
+	font-family: 'Open Sans';
 }
 img{
 	margin: 20px;
@@ -14,14 +17,13 @@ img{
 	font-size: 100px;
 	margin: 0;
 	padding: 0;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 #constdiv{
-	height: 250px;
+	height: 350px;
 }
 #outerflex{
 	position: absolute;
-    top: 250px;
+    top: 350px;
 	bottom: 0;
 	width: 99%;
 }
@@ -36,7 +38,6 @@ a {
 	color: #037492;
 	text-decoration: none;
 	font-size: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 a:hover{
 	color: rgba(3,116,146,.5);
