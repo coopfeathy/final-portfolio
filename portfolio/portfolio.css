@@ -56,8 +56,17 @@ body{
 
 /* --------------------- MAIN --------------------- */
 
-
-
+#main{
+	display: flex;
+	background-color: #d4e1e9;
+	border: 3px solid #037492;
+	flex-direction: column;
+	padding: 20px;
+}
+.row{
+	display: flex;
+	background-color: #e2cf11;
+}
 
 
 
