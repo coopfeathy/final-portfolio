@@ -2,7 +2,7 @@
 body{
 	background-color: #e9dcc9;
 	margin: 20px;
-	font-weight: 200;
+    font-weight: 200;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
@@ -17,10 +17,10 @@ body{
 	align-items: center;
 	padding: 20px 0px;
 }
-
+                 
 /* -------------- LEFT -------------- */
 
-.logo{ 
+.logo{              
 	border: 3px solid #037492;
 	margin: 4px;
 }
@@ -198,7 +198,7 @@ body{
 #center{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 }
 #center i{
@@ -304,10 +304,6 @@ body{
 	#left, #center, #right{
 		width: 100%;
 	}
-	#center{
-		padding-left: 30px;
-	}
-
 }
 @media only screen and (max-width: 350px) {
 	#footer { 
@@ -317,5 +313,4 @@ body{
 		margin: 0;
 		padding: 0;
 	}
-
 }
