@@ -49,7 +49,7 @@ body{
 
 /* --------------------- SPACE --------------------- */
 
-#space{
+.space{
 	width: 20px;
 	height: 20px;
 }
@@ -58,19 +58,44 @@ body{
 
 #main{
 	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+.row1{
+	display: flex;
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
-	flex-direction: column;
 	padding: 20px;
 }
 .row{
 	display: flex;
-	background-color: #e2cf11;
+	background-color: #d4e1e9;
+	border: 3px solid #037492;
+	border-top: none;
+	padding: 20px;
+}
+.mainLeft{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: space-evenly; */
 }
 
-
-
-
+input[type="radio"] {
+	display: none;
+}
+input[type="radio"]:checked + section { 
+	display: block; 
+}
+.container section {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+	color: #fff;
+}
 
 /* --------------------- FOOTER --------------------- */
 
@@ -246,10 +271,10 @@ body{
 }
 
 @media only screen and (max-width: 760px) {
-	#parent, #header, #footer { 
+	#parent, #header, #footer, .row1, .row { 
 		flex-direction: column;
 	}
-	#left, #center, #right{
+	#left, #center, #right, .mainRight{
 		width: 100%;
 	}
 }

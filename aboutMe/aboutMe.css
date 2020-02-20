@@ -49,7 +49,7 @@ body{
 
 /* --------------------- SPACE --------------------- */
 
-#space{
+.space{
 	width: 20px;
 	height: 20px;
 }
