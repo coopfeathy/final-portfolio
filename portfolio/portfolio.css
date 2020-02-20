@@ -62,39 +62,60 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.row1{
-	display: flex;
-	background-color: #d4e1e9;
-	border: 3px solid #037492;
-	padding: 20px;
-}
 .row{
 	display: flex;
+	justify-content: center;
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
-	border-top: none;
 	padding: 20px;
 }
 .mainLeft{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: space-evenly; */
+	color: #02364c;
+	width: 40%;
 }
-
+.row h2{
+	text-decoration: underline;
+	-webkit-text-decoration-color: #e2cf11;  
+	text-decoration-color:#e2cf11 ;
+}
+.mainCenter{
+	width: 15%;
+	height: 20px;
+}
 input[type="radio"] {
 	display: none;
 }
 input[type="radio"]:checked + section { 
-	display: block; 
+	display: flex; 
 }
-.container section {
-	display: flex;
-	width: 50%;
+.mainRight{
+	width: 30%;
+	min-width: 250px;
+	max-width: 400px;
+	background-color: #02364c;
+	border: 3px solid #037492;
+	color: #fff;
+	position: relative;
+}
+section{
+	display: none;
+	width: 100%;
+	height: 300px;
 	flex-direction: column;
 	align-items: center;
-	display: none;
-	color: #fff;
+}
+section .left{
+	position: absolute;
+	bottom: 15px;
+	left: 20%;
+}
+section .right{
+	position: absolute;
+	bottom: 15px;
+	right: 20%;
 }
 
 /* --------------------- FOOTER --------------------- */
@@ -274,8 +295,11 @@ input[type="radio"]:checked + section {
 	#parent, #header, #footer, .row1, .row { 
 		flex-direction: column;
 	}
-	#left, #center, #right, .mainRight{
-		width: 100%;
+	#left, #center, #right, .mainLeft, .mainRight{
+		width: 99%;
+	}
+	.row{
+		align-items: center;
 	}
 }
 @media only screen and (max-width: 350px) {
