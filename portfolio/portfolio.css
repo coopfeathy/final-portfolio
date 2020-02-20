@@ -246,10 +246,7 @@ body{
 }
 
 @media only screen and (max-width: 760px) {
-	#parent { 
-		flex-direction: column;
-	}
-	#footer { 
+	#parent, #header, #footer { 
 		flex-direction: column;
 	}
 	#left, #center, #right{
@@ -259,9 +256,5 @@ body{
 @media only screen and (max-width: 350px) {
 	#footer { 
 		padding: 20px;
-	}
-	#left, #center, #right{
-		margin: 0;
-		padding: 0;
 	}
 }
