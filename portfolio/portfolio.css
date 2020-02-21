@@ -64,7 +64,7 @@ body{
 }
 .row{
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
 	padding: 20px;
@@ -78,11 +78,12 @@ body{
 }
 .row h2{
 	text-decoration: underline;
+	text-align: center;
 	-webkit-text-decoration-color: #e2cf11;  
 	text-decoration-color:#e2cf11 ;
 }
 .mainCenter{
-	width: 15%;
+	width: 0;
 	height: 20px;
 }
 input[type="radio"] {
@@ -92,9 +93,9 @@ input[type="radio"]:checked + section {
 	display: flex; 
 }
 .mainRight{
-	width: 30%;
+	width: 40%;
 	min-width: 250px;
-	max-width: 400px;
+	max-width: 420px;
 	background-color: #02364c;
 	border: 3px solid #037492;
 	color: #fff;
@@ -102,19 +103,21 @@ input[type="radio"]:checked + section {
 }
 section{
 	display: none;
-	width: 100%;
+	margin: 20px;
 	height: 300px;
 	flex-direction: column;
-	align-items: center;
+}
+section h2{
+	margin: 0;
 }
 section .left{
 	position: absolute;
-	bottom: 15px;
+	bottom: 20px;
 	left: 20%;
 }
 section .right{
 	position: absolute;
-	bottom: 15px;
+	bottom: 20px;
 	right: 20%;
 }
 
