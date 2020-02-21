@@ -79,9 +79,6 @@ const render_board = () => {
   board_container.innerHTML = ""
   play_board.forEach((e, i) => {
     board_container.innerHTML += `<div id="block_${i}" class="block" onclick="addPlayerMove(${i})">${play_board[i]}</div>`
-    if (e == player || e == computer) {
-      document.querySelector(`#block_${i}`).classList.add("occupied");
-    }
   });
 };
 
@@ -102,7 +99,26 @@ const addPlayerMove = e => {
 const addComputerMove = () => {
   if (!board_full) {
     do {
-      selected = Math.floor(Math.random() * 9);
+      
+      if () {
+        
+      } else if () {
+        
+      }  else if () {
+        
+      }  else if () {
+        
+      }  else if () {
+        
+      }  else if () {
+        
+      }  else if () {
+        
+      } else {
+        selected = Math.floor(Math.random() * 9);
+      }
+      console.log(selected);
+
     } while (play_board[selected] != "");
     play_board[selected] = computer;
     game_loop();
