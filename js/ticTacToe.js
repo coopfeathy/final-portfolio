@@ -100,8 +100,8 @@ const addComputerMove = () => {
   if (!board_full) {
     do {
       
-      if () {
-        
+      if ((play_board[2] = "") && ((play_board[0] = "X") && (play_board[1] = "X"))) {
+        selected = 2;
       } else if () {
         
       }  else if () {
