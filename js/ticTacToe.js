@@ -98,28 +98,63 @@ const addPlayerMove = e => {
 
 const addComputerMove = () => {
   if (!board_full) {
-    do {
-      
-      if ((play_board[2] = "") && ((play_board[0] = "X") && (play_board[1] = "X"))) {
-        selected = 2;
-      } else if () {
-        
-      }  else if () {
-        
-      }  else if () {
-        
-      }  else if () {
-        
-      }  else if () {
-        
-      }  else if () {
-        
-      } else {
-        selected = Math.floor(Math.random() * 9);
-      }
-      console.log(selected);
+    var selected;
+    if(play_board[4] == ""){
+      selected = 4;
+      // ---------------------- ROWS ----------------------
+    } else if (play_board[0] == player && play_board[1] == player && play_board[2] == "") {
+      selected = 2;
+    } else if (play_board[0] == player && play_board[2] == player && play_board[1] == "") {
+      selected = 1;
+    } else if (play_board[1] == player && play_board[2] == player && play_board[0] == "") {
+      selected = 0;
 
-    } while (play_board[selected] != "");
+    } else if (play_board[3] == player && play_board[4] == player && play_board[5] == "") {
+      selected = 5;
+    } else if (play_board[4] == player && play_board[5] == player && play_board[3] == "") {
+      selected = 3;
+
+    } else if (play_board[6] == player && play_board[7] == player && play_board[8] == "") {
+      selected = 8;
+    } else if (play_board[6] == player && play_board[8] == player && play_board[7] == "") {
+      selected = 7;
+    } else if (play_board[7] == player && play_board[8] == player && play_board[6] == "") {
+      selected = 6;
+    // ---------------------- COLUMNS ----------------------
+    } else if (play_board[0] == player && play_board[3] == player && play_board[6] == "") {
+      selected = 6;
+    } else if (play_board[0] == player && play_board[6] == player && play_board[3] == "") {
+      selected = 3;
+    } else if (play_board[3] == player && play_board[6] == player && play_board[0] == "") {
+      selected = 0;
+
+    } else if (play_board[1] == player && play_board[4] == player && play_board[7] == "") {
+      selected = 7;
+    } else if (play_board[4] == player && play_board[7] == player && play_board[1] == "") {
+      selected = 1;
+
+    } else if (play_board[2] == player && play_board[5] == player && play_board[8] == "") {
+      selected = 8;
+    } else if (play_board[2] == player && play_board[8] == player && play_board[5] == "") {
+      selected = 5;
+    } else if (play_board[5] == player && play_board[8] == player && play_board[2] == "") {
+      selected = 2;
+    // ---------------------- ZAGGZ ----------------------
+    } else if (play_board[0] == player && play_board[4] == player && play_board[8] == "") {
+      selected = 8;
+    } else if (play_board[4] == player && play_board[8] == player && play_board[0] == "") {
+      selected = 0;
+
+    } else if (play_board[6] == player && play_board[4] == player && play_board[2] == "") {
+      selected = 2;
+    } else if (play_board[4] == player && play_board[2] == player && play_board[6] == "") {
+      selected = 6;
+    }
+
+    while (play_board[selected] != "") {
+      selected = Math.floor(Math.random() * 9);
+      console.log(selected);
+    };
     play_board[selected] = computer;
     game_loop();
   }
