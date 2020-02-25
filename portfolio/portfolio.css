@@ -64,10 +64,8 @@ body{
 }
 .row{
 	display: flex;
-	justify-content: space-evenly;
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
-	padding: 20px;
 }
 .mainLeft{
 	display: flex;
@@ -75,6 +73,8 @@ body{
 	align-items: center;
 	color: #02364c;
 	width: 40%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 .row h2{
 	text-decoration: underline;
@@ -93,18 +93,16 @@ input[type="radio"]:checked + section {
 	display: flex; 
 }
 .mainRight{
-	width: 40%;
+	width: 50%;
 	min-width: 250px;
-	max-width: 420px;
 	background-color: #02364c;
-	border: 3px solid #037492;
 	color: #fff;
 	position: relative;
 }
 section{
 	display: none;
 	margin: 20px;
-	height: 300px;
+	height: 400px;
 	flex-direction: column;
 }
 section h2{
@@ -299,11 +297,15 @@ section .right{
 		flex-direction: column;
 	}
 	#left, #center, #right, .mainLeft, .mainRight{
-		width: 99%;
+		width: 100%;
 	}
 	.row{
 		align-items: center;
 	}
+	section{
+		height: 200px;
+	}
+
 }
 @media only screen and (max-width: 350px) {
 	#footer { 

@@ -99,8 +99,70 @@ const addPlayerMove = e => {
 const addComputerMove = () => {
   if (!board_full) {
     var selected;
-    if(play_board[4] == ""){
+    if(1 == 2){
+      console.log("this is impossible");
+
+    // ---------------------- OFFENCE ----------------------
+    // ---------------------- ROWS ----------------------
+    } else if (play_board[0] == computer && play_board[1] == computer && play_board[2] == "") {
+      selected = 2;
+    } else if (play_board[0] == computer && play_board[2] == computer && play_board[1] == "") {
+      selected = 1;
+    } else if (play_board[1] == computer && play_board[2] == computer && play_board[0] == "") {
+      selected = 0;
+
+    } else if (play_board[3] == computer && play_board[4] == computer && play_board[5] == "") {
+      selected = 5;
+    } else if (play_board[4] == computer && play_board[5] == computer && play_board[3] == "") {
+      selected = 3;
+    } else if (play_board[3] == computer && play_board[5] == computer && play_board[4] == "") {
       selected = 4;
+
+    } else if (play_board[6] == computer && play_board[7] == computer && play_board[8] == "") {
+      selected = 8;
+    } else if (play_board[6] == computer && play_board[8] == computer && play_board[7] == "") {
+      selected = 7;
+    } else if (play_board[7] == computer && play_board[8] == computer && play_board[6] == "") {
+      selected = 6;
+      
+    // ---------------------- COLUMNS ----------------------
+    } else if (play_board[0] == computer && play_board[3] == computer && play_board[6] == "") {
+      selected = 6;
+    } else if (play_board[0] == computer && play_board[6] == computer && play_board[3] == "") {
+      selected = 3;
+    } else if (play_board[3] == computer && play_board[6] == computer && play_board[0] == "") {
+      selected = 0;
+
+    } else if (play_board[1] == computer && play_board[4] == computer && play_board[7] == "") {
+      selected = 7;
+    } else if (play_board[1] == computer && play_board[7] == computer && play_board[4] == "") {
+      selected = 4;
+    } else if (play_board[4] == computer && play_board[7] == computer && play_board[1] == "") {
+      selected = 1;
+
+    } else if (play_board[2] == computer && play_board[5] == computer && play_board[8] == "") {
+      selected = 8;
+    } else if (play_board[2] == computer && play_board[8] == computer && play_board[5] == "") {
+      selected = 5;
+    } else if (play_board[5] == computer && play_board[8] == computer && play_board[2] == "") {
+      selected = 2;
+    // ---------------------- ZAGGZ ----------------------
+    } else if (play_board[0] == computer && play_board[4] == computer && play_board[8] == "") {
+      selected = 8;
+    } else if (play_board[0] == computer && play_board[8] == computer && play_board[4] == "") {
+      selected = 4;
+    } else if (play_board[4] == computer && play_board[8] == computer && play_board[0] == "") {
+      selected = 0;
+
+    } else if (play_board[6] == computer && play_board[4] == computer && play_board[2] == "") {
+      selected = 2;
+    } else if (play_board[6] == computer && play_board[2] == computer && play_board[4] == "") {
+      selected = 4;
+    } else if (play_board[4] == computer && play_board[2] == computer && play_board[6] == "") {
+      selected = 6;
+
+      // ---------------------- DEFENSE ----------------------
+
       // ---------------------- ROWS ----------------------
     } else if (play_board[0] == player && play_board[1] == player && play_board[2] == "") {
       selected = 2;
@@ -113,6 +175,8 @@ const addComputerMove = () => {
       selected = 5;
     } else if (play_board[4] == player && play_board[5] == player && play_board[3] == "") {
       selected = 3;
+    } else if (play_board[3] == player && play_board[5] == player && play_board[4] == "") {
+      selected = 4;
 
     } else if (play_board[6] == player && play_board[7] == player && play_board[8] == "") {
       selected = 8;
@@ -120,6 +184,7 @@ const addComputerMove = () => {
       selected = 7;
     } else if (play_board[7] == player && play_board[8] == player && play_board[6] == "") {
       selected = 6;
+      
     // ---------------------- COLUMNS ----------------------
     } else if (play_board[0] == player && play_board[3] == player && play_board[6] == "") {
       selected = 6;
@@ -130,6 +195,8 @@ const addComputerMove = () => {
 
     } else if (play_board[1] == player && play_board[4] == player && play_board[7] == "") {
       selected = 7;
+    } else if (play_board[1] == player && play_board[7] == player && play_board[4] == "") {
+      selected = 4;
     } else if (play_board[4] == player && play_board[7] == player && play_board[1] == "") {
       selected = 1;
 
@@ -142,15 +209,26 @@ const addComputerMove = () => {
     // ---------------------- ZAGGZ ----------------------
     } else if (play_board[0] == player && play_board[4] == player && play_board[8] == "") {
       selected = 8;
+    } else if (play_board[0] == player && play_board[8] == player && play_board[4] == "") {
+      selected = 4;
     } else if (play_board[4] == player && play_board[8] == player && play_board[0] == "") {
       selected = 0;
 
     } else if (play_board[6] == player && play_board[4] == player && play_board[2] == "") {
       selected = 2;
+    } else if (play_board[6] == player && play_board[2] == player && play_board[4] == "") {
+      selected = 4;
     } else if (play_board[4] == player && play_board[2] == player && play_board[6] == "") {
       selected = 6;
+    } else if(play_board[4] == ""){
+      random = Math.random() >= 0.4 // %60 probability of get "true"
+      if(random){
+        selected = 4;
+        console.log(true);
+      } else {
+        console.log(false);
+      }
     }
-
     while (play_board[selected] != "") {
       selected = Math.floor(Math.random() * 9);
       console.log(selected);
