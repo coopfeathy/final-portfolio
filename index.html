@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Cooper Featherstone</title>
@@ -10,20 +10,92 @@
 <link rel="apple-touch-icon" href="images/logo.png">
 <link rel="icon" href="images/logo.png">
 <link href="home/main.css" rel="stylesheet" type="text/css">
+<link href="common/footer.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<br>
-	<center>
-		<div id="constdiv">
-			<img src="images/logo.png" width="150" height="150" alt=""/>
-	  		<p class="header-index">Cooper Featherstone</p>
-		</div>
-		<div id="outerflex">
-			<div id="flexbox">
-				<p class="title-index"><a href="aboutMe/aboutMe.html">About</a></p>
-				<p class="title-index"><a href="portfolio/portfolio.html">Portfolio</a></p>
+	<div id="header">
+		<img src="images/logo.png" width="150" height="150" alt=""/>
+		<div class="space"></div>
+		<p class="header-index">Cooper Featherstone</p>
+	</div>
+
+	<div class="space"></div>
+
+	<div id="main">
+		<div class="slider">
+			<div class="slide current">
+				<div class="content">
+				<h1>Slide One</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
+					maxime, voluptatibus labore doloremque vero!
+				</p>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="content">
+				<h1>Slide Two</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
+					maxime, voluptatibus labore doloremque vero!
+				</p>
+				</div>
 			</div>
 		</div>
-	</center>
+		<div class="buttons">
+			<button id="prev"><i class="fa fa-arrow-left"></i></button>
+			<button id="next"><i class="fa fa-arrow-right"></i></button>
+		</div>
+	</div>
+
+	<div class="space"></div>
+
+	<div id="footer">
+		<div id="left">
+			<img class="logo" src="images/logo.png" width="50" height="50" alt="Logo"/>
+			<p class="footer-links">
+				<a href="aboutMe/aboutMe.html" class="link-1">About</a>
+				<a href="portfolio/portfolio.html">Portfolio</a>
+				<a href="#">Blog</a>
+				<a target="_blank" href="https://coopers-contact-page.000webhostapp.com/">Contact</a>
+			</p>
+			<div class="footer-icons">
+				<a href="https://www.linkedin.com/in/cooper-featherstone-8b9592186" target="_blank"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/coopfeathy" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="https://www.instagram.com/coopfeathy" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.snapchat.com/add/coopfeathy" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
+				<a href="https://www.facebook.com/Coopfeathy" target="_blank"><i class="fa fa-facebook"></i></a>
+			</div>
+			<p class="footer-company-name">Cooper Featherstone © 2020</p>
+			<br>
+		</div>
+		<div id="center">
+			<div>
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>2510 NW Turner Dr.</span>Bentonville, AR</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:+13109479988">+1(310)947-9988</a></p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:cooperfeatherstone13@gmail.com">Click to Email</a></p>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<p id="winner" class="tic-about">In case you are bored</p>
+			<div class="play-area"></div>
+			<br>
+			<button class="reset" onclick="reset_board()">RESET</button>
+		</div>
+	</div>
+
+	<script src="common/ticTacToe.js"></script>
+    <script src="home/main.js"></script>
+
 </body>
 </html>
