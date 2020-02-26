@@ -170,6 +170,7 @@
 	color: #02364c;
 	background-color: #d4e1e9;
 	border-color: #02364c;
+	cursor: pointer;
 }
 .reset:focus{
 	outline: none;
