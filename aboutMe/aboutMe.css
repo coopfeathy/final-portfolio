@@ -9,6 +9,9 @@ body{
 
 /* --------------------- MAIN --------------------- */
 
+*{
+    box-sizing: border-box;
+}
 #parent {
 	display: flex;
 }

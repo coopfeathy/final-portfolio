@@ -1,4 +1,5 @@
 /* --------------------- HEADER --------------------- */
+
 *{
     box-sizing: border-box;
 }
@@ -19,19 +20,12 @@
     justify-content: flex-start;
     align-items: center;
 }
-#header-right{
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-}
 #header .logo{              
 	border: 3px solid #037492;
     margin: 4px;
     height: 100px;
     width: 100px;
 }
-
 .title{
 	text-align: left;
 	color: #037492;
@@ -41,13 +35,51 @@
 
 /* -------------- RIGHT -------------- */
 
+#header-right{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
 .link{
 	color: #037492;
 	text-decoration: none;
 	font-size: 25px;
+	position: relative;
+}
+.link:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: #e2cf11;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.link:hover::before{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+  	transform: scaleX(1);
 }
 .active{
-    border-bottom: 3px solid #e2cf11;
+	color: #037492;
+	text-decoration: none;
+	font-size: 25px;
+	position: relative;
+}
+.active:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: #e2cf11;
 }
 /* --------------------- SPACE --------------------- */
 

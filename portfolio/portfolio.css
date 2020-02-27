@@ -9,6 +9,9 @@ body{
 
 /* --------------------- MAIN --------------------- */
 
+*{
+    box-sizing: border-box;
+}
 #main{
 	display: flex;
 	flex-direction: column;
@@ -23,9 +26,10 @@ body{
 .mainLeft{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	color: #02364c;
-	width: 40%;
+	width: 50%;
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -34,10 +38,6 @@ body{
 	text-align: center;
 	-webkit-text-decoration-color: #e2cf11;  
 	text-decoration-color:#e2cf11 ;
-}
-.mainCenter{
-	width: 0;
-	height: 20px;
 }
 input[type="radio"] {
 	display: none;
@@ -71,6 +71,34 @@ section .right{
 	bottom: 20px;
 	right: 20%;
 }
+
+
+.slider {
+	/* line them up horizontally */
+	display: flex;
+	width: 300px;
+	background-color: white;
+  
+	/* allow for scrolling */
+	overflow-x: auto;
+  
+	/* make it smooth on iOS */
+	-webkit-overflow-scrolling: touch;
+
+	scroll-snap-points-x: repeat(300px) 1;
+  scroll-snap-type: mandatory;
+  }
+  .slider > div {
+	/* make sure the width is honored */
+	flex-shrink: 0;
+	width: 300px;
+	height: 300px;
+  }
+
+
+
+
+
 
 @media only screen and (max-width: 760px) {
 	.row { 

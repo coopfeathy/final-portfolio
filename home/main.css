@@ -7,43 +7,22 @@ body{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
-/* --------------------- HEADER --------------------- */
+/* -------------- HEADER -------------- */
 
-#header{
-	background-color: #d4e1e9;
-	border: 3px solid #037492;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	padding: 20px;
+*{
+    box-sizing: border-box;
 }
-
-/* -------------- LEFT -------------- */
-
-img{
-	border: 4px solid #037492;
-}
-
-/* -------------- RIGHT -------------- */
-
 .header-index {
 	background-color: #e9dcc9;
 	border: 3px solid #037492;
 	color: #d4e1e9;
-	font-size: 50px;
-	margin: 0;
-	padding: 10px;
-	text-align: center;
+
+	text-align: left;
+    font-size: 50px;
+    margin: 0px;
 	text-shadow: -1px -1px 0 #037492, 1px -1px 0 #037492, -1px 1px 0 #037492, 1px 1px 0 #037492;
 }
 
-/* --------------------- SPACE --------------------- */
-
-.space{
-	width: 20px;
-	height: 20px;
-}
 
 /* --------------------- MAIN --------------------- */
 
