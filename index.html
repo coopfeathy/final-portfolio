@@ -10,14 +10,23 @@
 <link rel="apple-touch-icon" href="images/logo.png">
 <link rel="icon" href="images/logo.png">
 <link href="home/main.css" rel="stylesheet" type="text/css">
+<link href="common/header.css" rel="stylesheet" type="text/css">
 <link href="common/footer.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="header">
-		<img src="images/logo.png" width="150" height="150" alt=""/>
-		<div class="space"></div>
-		<p class="header-index">Cooper Featherstone</p>
+		<div id="header-left">
+			<img class="logo" src="images/logo.png" alt="Logo" />&nbsp;&nbsp;
+			<p class="header-index">Cooper Featherstone</p>
+		</div>
+		<div id="header-right">
+			<a class="link active" href="?">Home</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="link" href="aboutMe/aboutMe.html">About</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="link" href="portfolio/portfolio.html">Portfolio</a>
+		</div>
 	</div>
 
 	<div class="space"></div>
@@ -51,7 +60,7 @@
 
 	<div id="footer">
 		<div id="left">
-			<img class="logo" src="images/logo.png" width="50" height="50" alt="Logo"/>
+			<img class="logo" src="images/logo.png" alt="Logo"/>
 			<p class="footer-links">
 				<a href="aboutMe/aboutMe.html" class="link-1">About</a>
 				<a href="portfolio/portfolio.html">Portfolio</a>

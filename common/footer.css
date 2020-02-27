@@ -1,5 +1,4 @@
 /* --------------------- FOOTER --------------------- */
-
 #footer {
 	display: flex;
 	justify-content: space-around;
@@ -16,9 +15,11 @@
 	align-items: center;
 	justify-content: center;
 }
-#left .logo{              
+#footer .logo{              
 	border: 3px solid #037492;
 	margin: 4px;
+	height: 75px;
+	width: 75px;
 }
 .footer-links{
 	color:  #037492;
