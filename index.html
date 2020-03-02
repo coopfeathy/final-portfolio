@@ -20,8 +20,8 @@
 			<img class="logo" src="images/logo.png" alt="Logo" />&nbsp;&nbsp;
 			<p class="title">Cooper Featherstone</p>
 		</div>
-		<div id="header-right">
-			<a class="active" href="?">Home</a>
+		<div onmouseenter="doStuff()" onmouseleave="undoStuff()" id="header-right">
+			<a id="activeLink" class="active" href="?">Home</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="link" href="aboutMe/aboutMe.html">About</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -103,6 +103,6 @@
 
 	<script src="common/ticTacToe.js"></script>
     <script src="home/main.js"></script>
-
+	<script src="common/headerLinks.js"></script>
 </body>
 </html>

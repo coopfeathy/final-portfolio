@@ -20,10 +20,10 @@
 			<img class="logo" src="../images/logo.png" alt="Logo" />&nbsp;&nbsp;
 			<p class="title">Cooper Featherstone</p>
 		</div>
-		<div id="header-right">
+		<div onmouseenter="doStuff()" onmouseleave="undoStuff()" id="header-right">
 			<a class="link" href="../index.html">Home</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="active" href="?">About</a>
+			<a id="activeLink" class="active" href="?">About</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="link" href="../portfolio/portfolio.html">Portfolio</a>
 		</div>
@@ -153,6 +153,7 @@
 	</div>
 	</div>
 	<script src="../common/ticTacToe.js"></script>
+	<script src="../common/headerLinks.js"></script>
 
 </body>
 </html>
