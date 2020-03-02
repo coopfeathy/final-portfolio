@@ -98,18 +98,15 @@ body{
 /* Backgorund Images */
  
 .slide:first-child {
-  background: url('../images/mainSlide1.JPG') no-repeat
+  background: url('../images/mainSlide/mainSlide1.JPG') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-  background: url('../images/mainSlide2.JPG') no-repeat
+  background: url('../images/mainSlide/mainSlide2.JPG') no-repeat
     center top/cover;
 }
 
 @media only screen and (max-width: 760px) {
-	#header{
-    flex-direction: column;
-  }
   .slide .content {
     box-sizing: border-box;
     bottom: -300px;

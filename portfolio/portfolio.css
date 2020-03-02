@@ -26,7 +26,7 @@ body{
 .mainLeft{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	color: #02364c;
 	width: 50%;
@@ -52,6 +52,88 @@ input[type="radio"]:checked + section {
 	color: #fff;
 	position: relative;
 }
+
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+	width: 100%;
+  }
+  .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+  }
+  .slide.current {
+	opacity: 1;
+	z-index: 1;
+  }
+  .slide .content {
+	position: absolute;
+	bottom: 70px;
+	left: -600px;
+	opacity: 0;
+	width: 600px;
+	background-color: rgb(211,225,233, .8);
+	border-top: 3px solid #037492;
+	border-right: 3px solid #037492;
+	border-bottom: 3px solid #037492;
+	color: #02364c;
+	padding: 35px;
+  }
+  .slide .content h1 {
+	margin-bottom: 10px;
+  }
+  .slide.current .content {
+	opacity: 1;
+	transform: translateX(600px);
+	transition: all 0.7s ease-in-out 0.3s;
+  }
+  .buttons button#next {
+	position: absolute;
+	top: 40%;
+	right: 15px;
+  }
+  .buttons button#prev {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+  }
+  .buttons button {
+	border: 4px solid #037492;
+	background-color: transparent;
+	color: #037492;
+	cursor: pointer;
+	padding: 13px 15px;
+	border-radius: 50%;
+	outline: none;
+	z-index: 2;
+  }
+  .buttons button:hover {
+	background-color: #d4e1e9;
+	color: #02364c;
+  }
+  
+  /* Backgorund Images */
+   
+  .slide:first-child {
+	background: url('../images/mainSlide/mainSlide1.JPG') no-repeat
+	  center top/cover;
+  }
+  .slide:nth-child(2) {
+	background: url('../images/mainSlide/mainSlide2.JPG') no-repeat
+	  center top/cover;
+  }
+
+
+
+
+
 section{
 	display: none;
 	margin: 20px;
@@ -86,4 +168,21 @@ section .right{
 		height: 200px;
 	}
 
+	.slide .content {
+		box-sizing: border-box;
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+		border-right: none;
+		border-bottom: none;
+	}
+	.slide.current .content {
+		transform: translateY(-300px);
+	}
+
+}
+@media only screen and (max-width: 350px) {
+  .buttons button#prev, .buttons button#next{
+    top: 30%;
+  }
 }
