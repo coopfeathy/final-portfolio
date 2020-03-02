@@ -39,12 +39,8 @@ body{
 	-webkit-text-decoration-color: #e2cf11;  
 	text-decoration-color:#e2cf11 ;
 }
-input[type="radio"] {
-	display: none;
-}
-input[type="radio"]:checked + section { 
-	display: flex; 
-}
+
+
 .mainRight{
 	width: 50%;
 	min-width: 250px;
@@ -94,12 +90,12 @@ input[type="radio"]:checked + section {
 	transform: translateX(600px);
 	transition: all 0.7s ease-in-out 0.3s;
   }
-  .buttons button#next {
+  .buttons button.next {
 	position: absolute;
 	top: 40%;
 	right: 15px;
   }
-  .buttons button#prev {
+  .buttons button.prev {
 	position: absolute;
 	top: 40%;
 	left: 15px;
@@ -130,29 +126,6 @@ input[type="radio"]:checked + section {
 	  center top/cover;
   }
 
-
-
-
-
-section{
-	display: none;
-	margin: 20px;
-	height: 400px;
-	flex-direction: column;
-}
-section h2{
-	margin: 0;
-}
-section .left{
-	position: absolute;
-	bottom: 20px;
-	left: 20%;
-}
-section .right{
-	position: absolute;
-	bottom: 20px;
-	right: 20%;
-}
 
 @media only screen and (max-width: 760px) {
 	.row { 
