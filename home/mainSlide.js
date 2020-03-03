@@ -1,9 +1,21 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
+var auto = true; // Auto scroll
 const intervalTime = 5000;
 let slideInterval;
+
+function pause() {
+  auto = false;
+  clearInterval(slideInterval);
+  console.log("this worked");
+}
+function play() {
+  auto = true;
+  slideInterval = setInterval(nextSlide, intervalTime);
+  console.log("this worked too!!");
+
+}
 
 const nextSlide = () => {
   // Get current class
