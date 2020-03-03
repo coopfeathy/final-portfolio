@@ -117,13 +117,19 @@ body{
   
   /* Backgorund Images */
    
-  .slide:first-child {
+  .bg1 {
 	background: url('../images/mainSlide/mainSlide1.JPG') no-repeat
 	  center top/cover;
   }
-  .slide:nth-child(2) {
+  .bg2 {
 	background: url('../images/mainSlide/mainSlide2.JPG') no-repeat
 	  center top/cover;
+  }
+  .bg3 {
+	background-color: royalblue;
+  }
+  .bg4 {
+	background-color: red;
   }
 
 

@@ -1,61 +1,58 @@
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
-const intervalTime = 5000;
-let slideInterval;
+const allSlides = Array.from(document.querySelectorAll('.slide'));
+const next = document.querySelectorAll('.next');
+const prev = document.querySelectorAll('.prev');
 
-const nextSlide = () => {
-  // Get current class
-  const current = document.querySelector('.current');
-  // Remove current class
+const nextSlide = (i, slice1, slice2) => {
+  const currents = document.querySelectorAll('.current');
+  const current = currents[i];
+  const slides = allSlides.slice(slice1, slice2);
+
   current.classList.remove('current');
-  // Check for next slide
+  
   if (current.nextElementSibling) {
-    // Add current to next sibling
     current.nextElementSibling.classList.add('current');
   } else {
-    // Add current to start
     slides[0].classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
 
-const prevSlide = () => {
-  // Get current class
-  const current = document.querySelector('.current');
-  // Remove current class
+const prevSlide = (i, slice1, slice2) => {
+  const currents = document.querySelectorAll('.current');
+  const current = currents[i];
+  const slides = allSlides.slice(slice1,slice2);
+
   current.classList.remove('current');
-  // Check for prev slide
+
   if (current.previousElementSibling) {
-    // Add current to prev sibling
     current.previousElementSibling.classList.add('current');
   } else {
-    // Add current to last
     slides[slides.length - 1].classList.add('current');
+    console.log(slides)
   }
   setTimeout(() => current.classList.remove('current'));
 };
 
+
 // Button events
-next.addEventListener('click', e => {
-  nextSlide();
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
+for (let i = 0; i < next.length; i++) {
+  next[i].addEventListener('click', e => {
+    if (i == 0) {
+      nextSlide(i,0,2);
+    } else if(i == 1){
+      nextSlide(i,2,4);
+    }
+  });
+}
 
-prev.addEventListener('click', e => {
-  prevSlide();
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
-
-// Auto slide
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime);
+for (let i = 0; i < prev.length; i++) {
+  prev[i].addEventListener('click', e => {
+    if (i == 0) {
+      prevSlide(0,0,2);
+    } else if(i == 1){
+      prevSlide(1,2,4);
+    } else {
+      console.log("There is an error");
+    }
+  });
 }
