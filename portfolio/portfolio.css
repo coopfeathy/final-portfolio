@@ -118,18 +118,35 @@ body{
   /* Backgorund Images */
    
   .bg1 {
-	background: url('../images/portfolio/Slide0/bentonvilleSchools.png') no-repeat
-	  center top/cover;
+	background: url('../images/portfolio/Slide0/bentonvilleSchools.png') no-repeat center top/cover;
   }
   .bg-fish {
-	background: url('../images/portfolio/Slide0/fish.png') no-repeat
-	  center top/cover;
+	background: url('../images/portfolio/Slide0/fish.png') no-repeat center top/cover;
   }
-  .bg3 {
-	background-color: royalblue;
+  .bg-howToHtml{
+	background-image: linear-gradient(to right, red , yellow);
   }
-  .bg4 {
-	background-color: red;
+  .bg-toyDrive{
+	background: #a6a6a6 url('../images/portfolio/Slide0/Teddy.svg') no-repeat center top/cover;
+  }
+  .bg-multiMenu{
+	background: url('../images/portfolio/Slide0/multiMenu.PNG') no-repeat center top/cover;
+  }
+
+
+  .bg-snake{
+	background: url('../images/portfolio/Slide1/snake.PNG') no-repeat center top/cover;
+  }
+
+
+  .bg-dadJoke{
+	background: url('../images/portfolio/Slide2/dadJoke.jpg') no-repeat center top/cover;
+  }
+  .bg-reactTic{
+	background: url('../images/portfolio/Slide2/tic_tac_toe.png') no-repeat center top/cover;
+  }
+  .bg-reactHowTo{
+	background: #343a40 url('../images/portfolio/Slide2/howTo.jpg') no-repeat center top/cover;
   }
 
 

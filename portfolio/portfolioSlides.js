@@ -38,9 +38,14 @@ const prevSlide = (i, slice1, slice2) => {
 for (let i = 0; i < next.length; i++) {
   next[i].addEventListener('click', e => {
     if (i == 0) {
-      nextSlide(i,0,2);
+      nextSlide(i,0,5);
     } else if(i == 1){
-      nextSlide(i,2,4);
+      nextSlide(i,5,7);
+    } else if(i == 2){
+      nextSlide(i,7,10);
+
+    } else {
+      console.log("There is an error");
     }
   });
 }
@@ -48,9 +53,12 @@ for (let i = 0; i < next.length; i++) {
 for (let i = 0; i < prev.length; i++) {
   prev[i].addEventListener('click', e => {
     if (i == 0) {
-      prevSlide(0,0,2);
+      prevSlide(i,0,5);
     } else if(i == 1){
-      prevSlide(1,2,4);
+      prevSlide(i,5,7);
+    } else if(i == 2){
+      prevSlide(i,7,10);
+
     } else {
       console.log("There is an error");
     }
