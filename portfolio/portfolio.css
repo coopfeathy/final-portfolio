@@ -34,7 +34,7 @@ body{
 	padding-right: 5%;
 	text-align: center;
 }
-.row h2{
+.row .mainLeft h2{
 	text-decoration: underline;
 	text-align: center;
 	-webkit-text-decoration-color: #e2cf11;  
@@ -44,14 +44,11 @@ body{
 
 .mainRight{
 	width: 50%;
-	min-width: 250px;
-	background-color: #02364c;
 	color: #fff;
 	position: relative;
 }
-
-
 .slider {
+	border-left: 3px solid #037492;
 	position: relative;
 	overflow: hidden;
 	height: 400px;
@@ -72,23 +69,25 @@ body{
   }
   .slide .content {
 	position: absolute;
-	bottom: 70px;
-	left: -600px;
+	bottom: 0px;
+	bottom: -300px;
 	opacity: 0;
-	width: 600px;
+	width: 100%;
 	background-color: rgb(211,225,233, .8);
-	border-top: 3px solid #e2cf11;
-	border-right: 3px solid #e2cf11;
-	border-bottom: 3px solid #e2cf11;
+	border-top: 3px solid #037492;
 	color: #02364c;
-	padding: 35px;
+	padding: 10px;
+	padding-bottom: 55px;
   }
-  .slide .content h1 {
-	margin-bottom: 10px;
+  .slide .content h2 {
+	/* text-decoration: underline;
+	-webkit-text-decoration-color: #e2cf11;  
+	text-decoration-color:#e2cf11 ; */
+	margin: 10px 0px;
   }
   .slide.current .content {
 	opacity: 1;
-	transform: translateX(600px);
+	transform: translateY(-300px);
 	transition: all 0.7s ease-in-out 0.3s;
   }
   .buttons button.next {
@@ -102,9 +101,9 @@ body{
 	left: 15px;
   }
   .buttons button {
-	border: 4px solid #e2cf11;
+	border: 4px solid #037492;
 	background-color: transparent;
-	color: #e2cf11;
+	color: #037492;
 	cursor: pointer;
 	padding: 13px 15px;
 	border-radius: 50%;
@@ -119,11 +118,11 @@ body{
   /* Backgorund Images */
    
   .bg1 {
-	background: url('../images/portolio/Slide0/bentonvilleSchools.png') no-repeat
+	background: url('../images/portfolio/Slide0/bentonvilleSchools.png') no-repeat
 	  center top/cover;
   }
-  .bg2 {
-	background: url('../images/mainSlide/mainSlide2.JPG') no-repeat
+  .bg-fish {
+	background: url('../images/portfolio/Slide0/fish.png') no-repeat
 	  center top/cover;
   }
   .bg3 {
@@ -144,25 +143,8 @@ body{
 	.row{
 		align-items: center;
 	}
-	section{
-		height: 200px;
+	.slider{
+		border-top: 3px solid #037492;
+		border-left: none;
 	}
-
-	.slide .content {
-		box-sizing: border-box;
-		bottom: -300px;
-		left: 0;
-		width: 100%;
-		border-right: none;
-		border-bottom: none;
-	}
-	.slide.current .content {
-		transform: translateY(-300px);
-	}
-
-}
-@media only screen and (max-width: 350px) {
-  .buttons button#prev, .buttons button#next{
-    top: 30%;
-  }
 }
