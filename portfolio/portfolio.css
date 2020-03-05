@@ -23,6 +23,12 @@ body{
 	background-color: #d4e1e9;
 	border: 3px solid #037492;
 }
+.row-odd{
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: #d4e1e9;
+	border: 3px solid #037492;
+}
 .mainLeft{
 	display: flex;
 	flex-direction: column;
@@ -46,9 +52,15 @@ body{
 	width: 50%;
 	color: #fff;
 	position: relative;
+	border-left: 3px solid #037492;
+}
+.mainRight-odd{
+	width: 50%;
+	color: #fff;
+	position: relative;
+	border-right: 3px solid #037492;
 }
 .slider {
-	border-left: 3px solid #037492;
 	position: relative;
 	overflow: hidden;
 	height: 400px;
@@ -130,7 +142,7 @@ body{
 	background: #a6a6a6 url('../images/portfolio/Slide0/Teddy.svg') no-repeat center top/cover;
   }
   .bg-multiMenu{
-	background: url('../images/portfolio/Slide0/multiMenu.PNG') no-repeat center top/cover;
+	background: url('../images/portfolio/Slide0/multiMenu.jpeg') no-repeat center top/cover;
   }
 
 
@@ -151,17 +163,16 @@ body{
 
 
 @media only screen and (max-width: 760px) {
-	.row { 
+	.row, .row-odd { 
 		flex-direction: column;
-	}
-	.mainLeft, .mainRight{
-		width: 100%;
-	}
-	.row{
 		align-items: center;
 	}
-	.slider{
+	.mainLeft, .mainRight, .mainRight-odd{
+		width: 100%;
+	}
+	.mainRight, .mainRight-odd{
 		border-top: 3px solid #037492;
 		border-left: none;
+		border-right: none;
 	}
 }
