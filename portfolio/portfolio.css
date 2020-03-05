@@ -149,6 +149,9 @@ body{
   .bg-snake{
 	background: url('../images/portfolio/Slide1/snake.PNG') no-repeat center top/cover;
   }
+  .bg-flappyBlock{
+	background: url('../images/portfolio/Slide1/flappyBlock.PNG') no-repeat center top/cover;
+  }
 
 
   .bg-dadJoke{
@@ -161,6 +164,19 @@ body{
 	background: #343a40 url('../images/portfolio/Slide2/howTo.jpg') no-repeat center top/cover;
   }
 
+
+  .bg-contact{
+	background: url('../images/portfolio/Slide3/contact.png') no-repeat center top/cover;
+  }
+  .bg-cPlus1{
+	background: url('../images/portfolio/Slide3/cPlus1.PNG') no-repeat center top/cover;
+  }
+  .bg-cPlus2{
+	background: url('../images/portfolio/Slide3/cPlus2.PNG') no-repeat center top/cover;
+  }
+  .bg-payPal{
+	background: url('../images/portfolio/Slide3/payPal.png') no-repeat center top/cover;
+  }
 
 @media only screen and (max-width: 760px) {
 	.row, .row-odd { 
